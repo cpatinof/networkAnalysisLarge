@@ -1,0 +1,44 @@
+2025-03-10 18:31:22,835 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:31:22,869 - ERROR - Error en la aplicación: Cannot hash argument 'self' (of type `__main__.TransactionNetworkAnalyzer`) in 'load_data'.
+
+To address this, you can tell Streamlit not to hash this argument by adding a
+leading underscore to the argument's name in the function signature:
+
+```
+@st.cache_data
+def load_data(_self, ...):
+    ...
+```
+            
+2025-03-10 18:35:39,078 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:35:39,093 - INFO - Datos cargados exitosamente. Nodos: 10, Conexiones: 13
+2025-03-10 18:35:39,096 - ERROR - Error en la aplicación: Cannot hash argument 'self' (of type `__main__.TransactionNetworkAnalyzer`) in 'calculate_node_metrics'.
+
+To address this, you can tell Streamlit not to hash this argument by adding a
+leading underscore to the argument's name in the function signature:
+
+```
+@st.cache_data
+def calculate_node_metrics(_self, ...):
+    ...
+```
+            
+2025-03-10 18:36:18,999 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:36:19,003 - INFO - Datos cargados exitosamente. Nodos: 10, Conexiones: 13
+2025-03-10 18:36:19,005 - ERROR - Error en la aplicación: Cannot hash argument 'self' (of type `__main__.TransactionNetworkAnalyzer`) in 'calculate_node_metrics'.
+
+To address this, you can tell Streamlit not to hash this argument by adding a
+leading underscore to the argument's name in the function signature:
+
+```
+@st.cache_data
+def calculate_node_metrics(_self, ...):
+    ...
+```
+            
+2025-03-10 18:38:14,014 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:38:14,021 - INFO - Datos cargados exitosamente. Nodos: 10, Conexiones: 13
+2025-03-10 18:39:16,370 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:39:16,376 - INFO - Datos cargados exitosamente. Nodos: 10, Conexiones: 13
+2025-03-10 18:58:33,169 - INFO - Archivo cargado: test_dataset.csv
+2025-03-10 18:58:33,204 - INFO - Datos cargados exitosamente. Nodos: 10, Conexiones: 13
